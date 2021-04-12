@@ -1,0 +1,35 @@
+data is ford go bike:
+
+Data wrangling process:
+fix multiple fields that are not in the correct dtype, 
+- start_time, end_time should be datetime type, user_type and member_gender 
+  should be categorical data type
+
+make new columns for trip duration in minute, trip start date in yyyy-mm-dd format
+make new columns trip start hour of the day, day of week and month
+make new column calculating riders' age from 'member_birth_year'
+filter out outlier ages from visual examination of the member age distribution and statistical percentile
+cast 'member_birth_year' and 'member_age' to integer instead of float type
+cast 'start_dayofweek' to category dtype
+cast 'start_month' to category dtype for easy plotting
+filter out outlier trip records where the duration was longer than normal 
+
+
+Findings in our data 
+
+The number of trips peaked around 8-9am and 17-18pm during a day, there were more trips on work days (Mon-Fri) compared to weekends, the trip duration is longer in weekends vs working days 
+most of riders is male and most of customer age between 20 and 37 years old,male rider tend to have shorter trips compared to female users.
+
+number of subscriber is higer than customer, customer tend to have longer rides than subscriber , we also can see that their are rush our between 7 am to 9 am and between 4 pm to 7 pm from that we can see that most of user use the bike for going and come back from work
+
+
+Key Insights for Presentation
+
+their are different in usage and patterns between our cumtomer, subscriber use the service more during working day and less in weekends, customer use it more on weekends and for longer times, we also can say that most user like to use the bike in short trips like 5 to 15 min, we also can see that most of subscriber use the service for work, also the ride duration is longer in weekends that may be due to user use it for fun
+most of user is male and they like to have short trip durations
+
+resourse
+
+https://seaborn.pydata.org/tutorial.html
+https://matplotlib.org/stable/tutorials/index.html
+
